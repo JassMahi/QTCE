@@ -1,0 +1,277 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Steel Forging Manufacturer India - Contact Sunil Forgings & Steel Industries</title>
+<meta name="description" content="Sunil Forging & Steel Industries is a world class manufacturer of forged products which supply in India and all over the world. Contact us for the best quote!"/>
+<meta name="keywords" content="steel forging manufacturer, forging company india, steel forged products, best forged products, price, quote, india"/>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500,700,300' rel='stylesheet' type='text/css' />
+<link href='http://fonts.googleapis.com/css?family=Buenard:400,700' rel='stylesheet' type='text/css'>
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-67921860-1', 'auto');
+  ga('require', 'linkid', 'linkid.js');
+  ga('send', 'pageview');
+
+</script>
+<!-- sliding form start -->
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="js/stickyfloat.js"></script>
+<script type="text/javascript">
+$( document ).ready(function() {
+	
+
+	$("#contact-btn").click(function() { //smoothly slide open/close form
+		var floatbox = $("#floating-contact-wrap");
+		if (floatbox.hasClass('visiable')){
+			floatbox.animate({"right":"-340px"}, "fast").removeClass('visiable');
+		}else{
+			floatbox.animate({"right":"0px"}, "fast").addClass('visiable');
+		}
+	});
+	
+	$("#message-send-btn").click(function() { //try sending email
+	
+		//validate the form
+		 var validator 		= $( "#floating-contact").validate();
+		 var isValid 		= validator.form();
+		 
+			if(isValid){ //is everyting valid? proceed
+
+				//collect values from input fields
+				var user_name       = $('.floating-contact-inner input[name=name]').val(); 
+				var user_email      = $('.floating-contact-inner input[name=email]').val();
+				var user_phone    = $('.floating-contact-inner input[name=phone]').val();
+				
+				//prepare ajax data
+				post_data = {'s_name':user_name, 's_email':user_email, 's_phone':user_phone};
+				
+				$(this).hide(); //hide submit button
+				$('#ajax-loading-image').show(); //show loading image
+				
+				$.post('ajax_response.php', post_data, function(data){  
+						validator.resetForm();
+						//load success massage in #result div element,  
+						$("#result").hide().html('<div class="success">'+data+'</div>').slideDown();
+						$('#floating-contact').hide(); //show submit button
+						
+					}).fail(function(err) {  //load any error data
+					
+						$("#result").hide().html('<div class="error">'+err.statusText+'</div>').slideDown();
+						$("#message-send-btn").show(); //show submit button
+						$('#ajax-loading-image').hide(); //hide loading image
+
+				});
+			
+			}else{
+				$("#message-send-btn").show(); //show submit button
+				$('#ajax-loading-image').hide(); //hide loading image
+			}
+	});
+	
+});
+</script>
+<link href="css/slidingform-style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style1.css">
+<!-- sliding form end -->
+</head>
+
+<body>
+<!-- floating contact form markup -->
+<div id="contact-wrapper">
+<div class="floating-contact-inner" id="floating-contact-wrap">
+<div id="contact-btn">&nbsp;</div>
+<div id="result"></div>
+<form method="post" id="contactform" action="contact_mail.php" name="contactform" >
+
+    <label>
+        <span>Name</span>
+        <input  type="text" name="name3" placeholder="Your Full Name"  required />
+        
+
+    </label>
+    
+    <label>
+        <span>Phone</span>
+        <input  type="text" name="phone3" placeholder="Your Contact Number"  required />
+    </label>
+    <label>
+        <span>Email</span>
+        <input type="email" name="email3" placeholder="Valid Email Address"  email required />
+    </label>
+   <label>
+        <span>Requirements</span>
+        <textarea  name="message3" placeholder="Your Requirements" required></textarea>
+    </label> 
+     <label>
+        <span>&nbsp;</span> 
+        <input id="formaction" name="formaction" type="hidden" value="3" /> 
+        <input type="submit" class="button" id="send_request" name="send_request" value="Send" />
+      
+        
+        <img id="ajax-loading-image" style="display:none" src="image/ajax-loader.gif" border="0" />
+    </label>    
+</form>
+</div>
+</div>
+<!-------------- Top Area ---------------->
+<div class="header-total-area">
+<div class="header-wrap">
+<img src="images/logo.jpg" class="logo-area" />
+<div class='row'>
+<i class='icon-facebook'><a href="https://www.facebook.com/Sunil-Forging-Steel-Industries-1712385838995307/" target="_blank"><img src="images/fb.png" alt="facebook" /></a></i><i class='icon-twitter'><a href="https://twitter.com/sunilforgings" target="_blank"><img src="images/tweet.png" alt="Twitter" /></a></i><i class='icon-googleplus'><a href="https://plus.google.com/112409924164679522438/about" target="_blank"><img src="images/gplus.png" alt="G Plus" /></a></i><!--<i class='icon-pinterest'></i><i class='icon-dribbble'></i>-->
+<p> <a href="mailto:info@sunilforgings.com">info@sunilforgings.com</a></p>
+</div>
+
+<!--<ul class="call">
+<li><img src="images/call-icon.jpg" /><p>+91 99203 29981</p></li>
+</ul>-->
+</div>
+</div>
+<!-------------- Top Area End ---------------->
+
+<!-------------- Wrap Area ---------------->
+<div class="wraper">
+
+<!---------------Top Nav-------------------->
+
+<div class="nav-area">
+<ul class="top-navigation">
+	<li><a href="index.html" title="">Home</a></li>
+	<li><a href="overview.html" >Corporate Overview <span></span></a></li>
+	<li><a href="product.html" title="">Product Range</a></li>
+	<li><a href="production-facilities.html" title="">Production Facilities</a></li>
+	<li><a href="quality.html" title=""> Quality Policies<span></span></a></li>
+	<li><a href="client.html" title="">Client</a></li>
+	<li><a href="sector.html" title="">Sector</a></li>
+	<li><a href="contact.html" title="">Contact Us<span></span></a></li>	
+	<li><a href="sitemap.html" title="">Sitemap</a></li>	
+</ul>
+
+</div>
+<!---------------Top Nav End-------------------->
+<!---------------Banner-------------------->
+<img src="images/contact_us.jpg" style="margin-top:3px;" />
+<!---------------Banner end-------------------->
+
+<!---------------Mid-area-------------------->
+<div class="matter-mid-sp">
+
+<!-------------- Left Area ---------------->
+<div class="left-area">
+
+<!-------------- Left Navigation Area ---------------->
+
+<div class="left-navigation-area">
+<p class="left-navigation-head" >Products</p>
+<ul class="left-navigation">
+<li><a href="#">Round Shaft/Rolls</a></li>
+<li><a href="#">Square Shaft</a></li>
+<li><a href="#">Rectangular Bars</a></li>
+<li><a href="#">Gear Blanks</a></li>
+<li><a href="#">Rings Forging</a></li>
+<li><a href="#">Hollow Shaft</a></li>
+</ul>
+</div>
+
+<!-------------- Left Navigation Area end ---------------->
+<img src="images/brochure.png"  style="float:left; margin-top:10px;" />
+</div>
+<!-------------- Left Area end ---------------->
+
+<!-------------- Right Mid Area ---------------->
+<div class="rgt-mid-area">
+<ul class="rgt-mid-top-link">
+<li><a href="index.html">Home</a></li><li>&nbsp;>&nbsp;</li>
+<li>Contact</li>
+</ul>
+
+<p class="rgt-header-txt">Contact</p>
+
+<div class="content-area">
+<div style="width:350px; float:left;"><div class="contact-details">
+
+<ul class="contact-over">
+ <div itemscope itemtype="http://schema.org/LocalBusiness">
+	<li class="head">Address</li>
+   
+	<li><strong><span itemprop="name" >Sunil Forging & Steel Industries Unit II</span></strong>
+    <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+   <span itemprop="streetAddress">Plant : L 141 Village Tondre, MIDC Taloja, Dist. Raigad, </span>
+     <span itemprop="addressLocality">Taloja</span>,- <span itemprop="postalCode">410208</span>, <br /><span itemprop="addressRegion">Maharashtra</span>, India</div></li>
+	<li  class="fax"><span itemprop="fax">+91 22 2740 1641 / 42 / 46</span></li>
+	<li class="mail"><a href="mailto:info@sunilforgings.com ">info@sunilforgings.com</a><br /><a href="mailto:sales@sunilforgings.com">sales@sunilforgings.com</a><br /><br /></li>
+</div>
+</ul>
+
+<!--
+<div itemscope itemtype="http://schema.org/LocalBusiness">
+   <span itemprop="name" >Sunil Forging & Steel Industries Unit II</span>
+   <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+     <span itemprop="streetAddress">Plant : L 141 Village Tondre, MIDC Taloja, Dist. Raigad, </span>
+     <span itemprop="addressLocality">Taloja</span>,
+     <span itemprop="addressRegion">Maharashtra</span>
+     <span itemprop="postalCode">410208</span>
+   </div>
+   Phone: <span itemprop="telephone">+91 22 3267 6007</span>
+</div>
+-->
+<ul class="bull">
+	<li>50 km from Mumbai International airport</li>
+	<li>45 km from Mumbai domesticl airport</li>
+	<li>30 km from Mumbai port (Nhava Sheva)</li></ul>
+</div></div>
+
+<div style="width:350px; float:right;"><iframe src="https://www.google.com/maps/embed?pb=!1m29!1m12!1m3!1d6450.866181265629!2d73.07620129076155!3d19.091449327927197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m14!1i0!3e6!4m5!1s0x0%3A0xc9b9a8d28734695c!2sSunil+Forging+%26+Steel+Industry+Unit+Ii!3m2!1d19.092841999999997!2d73.080365!4m5!1s0x3be7ea2555555555%3A0xc9b9a8d28734695c!2sSunil+Forging+%26+Steel+Industry+Unit+Ii%2C+Village+Tonder%2C+MIDC%2C+Tajola%2C+Navi+Mumbai%2C+Maharashtra+410208!3m2!1d19.092841999999997!2d73.080365!5e1!3m2!1sen!2sin!4v1413267489424" width="450" height="450" frameborder="0" style="border:0"></iframe></div>
+
+</div>
+
+
+
+</div>
+
+<!-------------- Right Mid Area End ---------------->
+
+
+
+
+</div>
+
+
+<!---------------Mid-area end-------------------->
+  <div class="footer-area">
+  <div style="width:950px;">
+  	<div style="width:707px; float:left;">
+	<div class="footer-sp">
+	<ul class="down-link">
+	<li><a href="index.html" title="">Home</a></li><li>|</li>
+	<li><a href="overview.html" >Corporate Overview </a></li><li>|</li>
+	<li><a href="product.html" title="">Product Range </a></li><li>|</li>
+	<li><a href="production-facilities.html" title="">Production Facilities</a></li><li>|</li>
+	<li><a href="quality.html" title="">Quality Policy</a></li><li>|</li>
+	<li><a href="client.html" title="">Client</a></li><li>|</li>
+	<li><a href="sector.html" title="">Sector</a></li><li>|</li>
+	<li><a href="contact.html" title="">Contact Us</a></li><li>|</li>
+	<li><a href="sitemap.html" title="">Sitemap</a></li><li>|</li>
+  	</ul>
+	</div>
+  </div>
+  	<div style="width:243px; float:right;"><p class="copy-right-area">&copy; 2015 SUNIL FORGING &amp; STEEL INDUSTRIES</p></div>
+  </div>
+  </div>
+
+
+</div>
+<!-------------- Wrap Area End ---------------->
+</body>
+</html>
