@@ -196,7 +196,7 @@ ul.top-navigation > li{float:left;  font-family: 'Open Sans'; font-size:12px;   
 
 ul.top-navigation > li > a{ display:block;  padding:4px 12px 10px 12px;  }
 
-ul.top-navigation > li > a:hover{text-decoration:none;  background: url('../imagess/but-bg-hover.jpg') repeat-x; }
+ul.top-navigation > li > a:hover{text-decoration:none;  background: url('../images/but-bg-hover.jpg') repeat-x; }
 ul.top-navigation > li:last-child > a{border-right:none!important;}
 
 
